@@ -272,6 +272,7 @@ ___SANDBOXED_JS_FOR_SERVER___
 
 const sendHttpRequest = require('sendHttpRequest');
 const getTimestampMillis = require('getTimestampMillis');
+const encodeUriComponent = require('encodeUriComponent');
 const JSON = require('JSON');
 const getRemoteAddress = require('getRemoteAddress');
 const getContainerVersion = require('getContainerVersion');
@@ -306,7 +307,7 @@ function determinateIsLoggingEnabled() {
 }
 
 function subscriptionToList() {
-  let url = 'https://a.klaviyo.com/client/subscriptions?company_id=' + data.publicApiKey;
+  let url = 'https://a.klaviyo.com/client/subscriptions?company_id=' + encodeUriComponent(data.publicApiKey);
 
   let profileProperties = {
       data: {
@@ -484,10 +485,6 @@ function subscriptionToList() {
     },
     JSON.stringify(profileProperties)
   );
-
-  if (data.useOptimisticScenario) {
-    data.gtmOnSuccess();
-  }
 }
 
 
