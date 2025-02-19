@@ -1,5 +1,10 @@
 homepage: "https://www.dowebanalytics.com"
 documentation: "https://www.dowebanalytics.com/"
 versions:
+  # Latest version
+  - sha: 5f02a788b90ae804f86b04aa24af8937e567874c
+    changeNotes: |2
+      Bug fixing
+  # Older versions
   - sha: 6cb693e7666c247925aa4ef26ca84ddcafb02d5a
     changeNotes: Initial release.
