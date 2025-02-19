@@ -2,7 +2,7 @@ homepage: "https://www.dowebanalytics.com"
 documentation: "https://www.dowebanalytics.com/"
 versions:
   # Latest version
-  - sha: 5f02a788b90ae804f86b04aa24af8937e567874c
+  - sha: 6b65af6c1799ef641824eed349969a59aaa2ee7a
     changeNotes: |2
       Bug fixing
   # Older versions
