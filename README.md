@@ -60,7 +60,7 @@
             <tbody>
                 <tr>
                     <td><strong>Klaviyo Private API Key</strong></td>
-                    <td><strong>(Required)</strong> Your private Klaviyo API key (starts with <code>pk_</code>). <strong>Best Practice</strong>: Store this as a "Utilities &gt; GCP Secret Manager" variable for maximum security.</td>
+                    <td><strong>(Required)</strong> Your private Klaviyo API key (starts with <code>pk_</code>).</td>
                     <td><code>{{Your Klaviyo Secret Variable}}</code></td>
                 </tr>
                 <tr>
